@@ -10,7 +10,8 @@ header, nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 2vh;
+  background-color: #212121;
+  color: #fef1fe;
 }
 
 header, nav, main{
@@ -18,22 +19,33 @@ header, nav, main{
   margin-right: 10vw;
 }
 
-header{ margin-top: 5vh; }
+header{
+  margin-top: 5vh;
+  padding: 4vh 1vh 5vh;
+}
 
-nav { margin-top: 5vh; }
+nav { padding: 0vh 2vh 2vh; }
 
-h1{ font-size: 7vw; }
+main {
+  background-color: #151515;
+  color: #fff2ff;
+  margin-bottom: 5vh;
+  padding: 1vh 2vh 4vh;
+}
 
-h2 { font-size: 5vw; }
+h1{ font-size: 5vw; }
 
-a {
+h3 { font-size: 4vw; }
+
+a, h2 {
+  font-size: 4vw;
   text-decoration: none;
-  color: black;
+  color: #fef1fe;
 }
 
 .profile-photo {
-  width: 15vw;
-  height: 9vh;
+  width: 13vw;
+  height: 7vh;
   border-radius: 50%;
 }
 
@@ -47,9 +59,9 @@ a {
 .talk, .status, .call {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
-
-.talk, .status { margin-bottom: 4vh; }
 
 .in-column {
   display: grid;
@@ -58,8 +70,8 @@ a {
 }
 
 .icon {
-  width: 2.5vw;
-  height: 2vh;
+  width: 2vw;
+  height: 1.5vh;
 }
 
 .viewed-icon { width: 3vw; }
@@ -71,16 +83,15 @@ a {
 
 .last-message-hour, .last-status-hour, .call-date {
   margin-top: 1vh;
+  font-size: 3.6vw;
+  justify-self: end;
 }
 
-.last-message-hour {
-  align-self: end;
-}
+.last-message-hour { align-self: end; }
 
 .last-message, .last-status-hour, .call-date {
   align-self: start;
+  font-size: 3.6vw;
 }
 
-.contact-name, h3 {
-  align-self: end;
-}
+.contact-name, h3 { align-self: end; }

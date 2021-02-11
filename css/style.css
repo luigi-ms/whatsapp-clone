@@ -19,7 +19,7 @@ header, nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #343434;
+  background-color: rgb(35, 45, 54);
   color: #fef1fe;
 }
 
@@ -28,32 +28,35 @@ header{ padding: 4vh 2vh 5vh; }
 nav { padding: 0vh 3vh 2vh; }
 
 main {
-  background-color: #242424;
-  color: #fff2ff;
+  background-color: rgb(16, 29, 37);
   padding: 1vh 3vh 4vh;
   height: 55vh;
   overflow: auto;
 }
 
-h1, h2, h3 {
+h1{
+  font-size: 5vw;
   font-weight: normal;
-  color: rgba(255, 242, 255, 0.85);
+  color: rgb(159, 163, 166);
 }
 
-h1{ font-size: 5vw; }
-
-h3 { font-size: 4vw; }
+h3 {
+  font-size: 4vw;
+  color: rgb(173, 181, 184);
+  font-weight: normal;
+}
 
 a, h2 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-decoration: none;
-  color: #fef1fe;
+  color: rgb(0, 170, 154);
+  /*border-bottom: 1vh rgb(0, 176, 156) solid;*/
 }
 
 hr {
-  background-color: rgba(255, 242, 255, 0.25);
+  /*background-color: rgba(44, 54, 63, 0.25);*/
   border: 0;
-  border-bottom: 1px dashed rgba(255, 242, 255, 0.25);
+  border-bottom: 1px solid rgb(44, 54, 63);
   margin-left: 25%;
   max-width: 75%;
 }
@@ -91,19 +94,20 @@ hr {
 
 .viewed-icon {
   width: 3vw;
-  background-color: #fff2ff;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 
 .search-icon {
-  width: 4.5vw;
-  height: 3vh;
+  width: 4.2vw;
+  height: 2.6vh;
+  color: rgb(158, 161, 166);
+  align-self: flex-end;
 }
 
 .last-message-hour, .last-status-hour, .call-date {
   margin-top: 1vh;
   font-size: 3.4vw;
-  color: rgba(255, 242, 255, 0.85);
+  color: rgb(140, 149, 156);
 }
 
 .last-message-hour {
@@ -114,10 +118,10 @@ hr {
 .last-message, .last-status-hour, .call-date {
   align-self: start;
   font-size: 3.4vw;
-  color: rgba(255, 242, 255, 0.85);
+  color: rgb(149, 157, 160);
 }
 
 .contact-name, h3 {
   align-self: end;
-  color: #fff2ff;
+  color: rgb(210, 215, 219);
 }

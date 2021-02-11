@@ -6,31 +6,38 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+body {
+  max-width: 90vw;
+  max-height: 80vh;
+  min-width: 60vw;
+  min-height: 80vh;
+  margin: 2vh 2vh;
+  padding: 4vh 1.5vh 2vh;
+}
+
 header, nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #212121;
+  background-color: #343434;
   color: #fef1fe;
 }
 
-header, nav, main{
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
+header{ padding: 4vh 2vh 5vh; }
 
-header{
-  margin-top: 5vh;
-  padding: 4vh 1vh 5vh;
-}
-
-nav { padding: 0vh 2vh 2vh; }
+nav { padding: 0vh 3vh 2vh; }
 
 main {
-  background-color: #151515;
+  background-color: #242424;
   color: #fff2ff;
-  margin-bottom: 5vh;
-  padding: 1vh 2vh 4vh;
+  padding: 1vh 3vh 4vh;
+  height: 55vh;
+  overflow: auto;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: rgba(255, 242, 255, 0.85);
 }
 
 h1{ font-size: 5vw; }
@@ -41,6 +48,14 @@ a, h2 {
   font-size: 4vw;
   text-decoration: none;
   color: #fef1fe;
+}
+
+hr {
+  background-color: rgba(255, 242, 255, 0.25);
+  border: 0;
+  border-bottom: 1px dashed rgba(255, 242, 255, 0.25);
+  margin-left: 25%;
+  max-width: 75%;
 }
 
 .profile-photo {
@@ -74,7 +89,11 @@ a, h2 {
   height: 1.5vh;
 }
 
-.viewed-icon { width: 3vw; }
+.viewed-icon {
+  width: 3vw;
+  background-color: #fff2ff;
+  border-radius: 50%;
+}
 
 .search-icon {
   width: 4.5vw;
@@ -83,15 +102,22 @@ a, h2 {
 
 .last-message-hour, .last-status-hour, .call-date {
   margin-top: 1vh;
-  font-size: 3.6vw;
+  font-size: 3.4vw;
+  color: rgba(255, 242, 255, 0.85);
+}
+
+.last-message-hour {
+  align-self: end;
   justify-self: end;
 }
 
-.last-message-hour { align-self: end; }
-
 .last-message, .last-status-hour, .call-date {
   align-self: start;
-  font-size: 3.6vw;
+  font-size: 3.4vw;
+  color: rgba(255, 242, 255, 0.85);
 }
 
-.contact-name, h3 { align-self: end; }
+.contact-name, h3 {
+  align-self: end;
+  color: #fff2ff;
+}

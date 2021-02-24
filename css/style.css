@@ -31,6 +31,7 @@ main {
   padding: 1% 5.5% 4%;
   height: 400px;
   overflow: auto;
+  display: grid;
 }
 
 h1{
@@ -59,14 +60,15 @@ hr {
   max-width: 75%;
 }
 
-.profile-photo, .status-preview {
+.profile-photo {
   width: 60%;
-  height: 90%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-.profile-photo { border-radius: 50%; }
-
 .status-preview {
+  width: 60%;
+  height: 90%;
   border: 2px black solid;
   border-radius: 50%;
 }
@@ -88,7 +90,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  border: 2px blue solid;
+  margin-right: 4%;
 }
 
 .menu-icon {
@@ -97,26 +99,47 @@ hr {
   justify-self: right;
 }
 
-.viewed-icon {
-  width: 9%;
-  border-radius: 45%;
-}
+.viewed-icon { width: 9%; }
 
 .search-icon {
   width: 44%;
   height: 44%;
+  justify-self: left;
+  margin-right: 65%;
   color: rgb(158, 161, 166);
 }
 
 .status-menu-icon {
   width: 27%;
   align-self: center;
+  justify-self: end;
+}
+
+.phone-icon {
+  width: 20%;
+  height: 37%;
+  align-self: center;
+  justify-self: end;
+}
+
+.received-call-icon {
+  width: 9%;
+  margin-right: 4%;
+}
+
+.contacts-menu-icon, .camera-status-icon, .new-call-icon {
+  width: 50%;
 }
 
 .last-message-hour, .last-status-hour, .call-date {
   margin-top: 3%;
   font-size: 3.4vw;
   color: rgb(140, 149, 156);
+}
+
+.call-date {
+  display: flex;
+  flex-direction: row;
 }
 
 .last-message-hour {
@@ -133,4 +156,12 @@ hr {
 .contact-name, h3 {
   align-self: end;
   color: rgb(210, 215, 219);
+}
+
+.contacts-menu, .camera-status, .new-call {
+  border-radius: 50%;
+  border-style: none;
+  padding: 4.9% 1.5%;
+  align-self: center;
+  justify-self: end;
 }

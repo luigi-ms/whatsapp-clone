@@ -22,9 +22,12 @@ header, nav {
   color: rgb(173, 181, 184);
 }
 
-header{ padding: 10% 4% 11%; }
+header{ padding: 10% 4% 9%; }
 
-nav { padding: 0% 5% 3%; }
+nav {
+  padding: 0% 5%;
+  justify-items: space-between;
+}
 
 main {
   background-color: rgb(16, 29, 37);
@@ -40,6 +43,13 @@ h1{
   color: rgb(159, 163, 166);
 }
 
+h2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  width: 100%;
+}
+
 h3 {
   font-size: 4vw;
   color: rgb(173, 181, 184);
@@ -49,8 +59,8 @@ h3 {
 a, h2 {
   font-size: 3.5vw;
   text-decoration: none;
+  justify-self: center;
   color: rgb(0, 170, 154);
-  /*border-bottom: 1vh rgb(0, 176, 156) solid;*/
 }
 
 hr {
@@ -58,6 +68,20 @@ hr {
   border-bottom: 1px solid rgb(44, 54, 63);
   margin-left: 25%;
   max-width: 75%;
+}
+
+.indicator {
+  align-self: end;
+  margin-top: 15%;
+  height: 25%;
+  width: 100%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background-color: rgb(0, 176, 156);
+}
+
+.camera {
+  width: 25%;
 }
 
 .profile-photo {

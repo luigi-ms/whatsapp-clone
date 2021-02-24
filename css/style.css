@@ -162,6 +162,7 @@ hr {
   border-radius: 50%;
   border-style: none;
   padding: 4.9% 1.5%;
-  align-self: center;
+  align-self: end;
   justify-self: end;
+  color: rgb(0, 176, 156);
 }
